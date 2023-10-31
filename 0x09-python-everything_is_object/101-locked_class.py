@@ -9,4 +9,3 @@ attribute is called first_name:
 class LockedClass:
     """Will only allow first name attribute"""
     __slots__ = ['first_name']
-
