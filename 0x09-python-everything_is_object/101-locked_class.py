@@ -1,4 +1,4 @@
-#!/usr/bin/pyton3
+#!/usr/bin/python3
 """
 Creates a LockedClass class that prevents the user from dynamically
 creating new instance attributes, except if the new instance
