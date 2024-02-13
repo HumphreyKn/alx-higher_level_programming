@@ -3,5 +3,5 @@
 SELECT `score`, `name`
 -- the source
 FROM `second_table`
--- order in descending by score field
+-- sort in descending order by score field
 ORDER BY `score` DESC;
