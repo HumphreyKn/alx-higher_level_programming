@@ -299,7 +299,7 @@ Here’s the basic syntax of the `GRANT` statement:
 ```
 GRANT privilege [,privilege],.. 
 ON privilege_level 
-TO account_name;Code language: SQL (Structured Query Language) (sql)
+TO account_name;
 ```
 
 
@@ -325,7 +325,7 @@ MySQL supports the following privilege levels:
 ```
 GRANT SELECT 
 ON *.* 
-TO bob@localhost;Code language: SQL (Structured Query Language) (sql)
+TO bob@localhost;
 ```
 
 
@@ -338,7 +338,7 @@ The account user `bob@localhost` can manage all databases of the current MySQL S
 ```
 GRANT INSERT 
 ON classicmodels.* 
-TO bob@localhost;Code language: SQL (Structured Query Language) (sql)
+TO bob@localhost;
 ```
 
 
@@ -351,7 +351,7 @@ In this example, `bob@localhost` can manage all objects in the `classicmodels` d
 ```
 GRANT DELETE 
 ON classicmodels.employees 
-TO bob@localhsot;Code language: SQL (Structured Query Language) (sql)
+TO bob@localhsot;
 ```
 
 
@@ -368,7 +368,7 @@ GRANT
    SELECT (employeeNumner,lastName, firstName,email), 
    UPDATE(lastName) 
 ON employees 
-TO bob@localhost;Code language: SQL (Structured Query Language) (sql)
+TO bob@localhost;
 ```
 
 
@@ -388,7 +388,7 @@ And updates only the `lastName` column in the `employees` table.
 ```
 GRANT EXECUTE 
 ON PROCEDURE CheckCredit 
-TO bob@localhost;Code language: SQL (Structured Query Language) (sql)
+TO bob@localhost;
 ```
 
 
@@ -401,7 +401,7 @@ In this example, `bob@localhost` can execute the stored procedure `CheckCredit` 
 ```
 GRANT PROXY 
 ON root 
-TO alice@localhost;Code language: SQL (Structured Query Language) (sql)
+TO alice@localhost;
 ```
 
 
@@ -416,14 +416,14 @@ First, create a new user named `super@localhost` by using the following `CREATE
 
 ```
 CREATE USER super@localhost 
-IDENTIFIED BY 'Secure1Pass!';Code language: SQL (Structured Query Language) (sql)
+IDENTIFIED BY 'Secure1Pass!';
 ```
 
 
 Second, show the privileges assigned to `super@localhost` user by using the `SHOW GRANTS` statement:
 
 ```
-SHOW GRANTS FOR super@localhost;Code language: SQL (Structured Query Language) (sql)
+SHOW GRANTS FOR super@localhost;
 ```
 
 
@@ -446,14 +446,14 @@ Third, grant all privileges in all databases in the current database server to `
 ```
 GRANT ALL 
 ON classicmodels.* 
-TO super@localhost;Code language: SQL (Structured Query Language) (sql)
+TO super@localhost;
 ```
 
 
 Fourth, use the `SHOW GRANTS` statement again:
 
 ```
-SHOW GRANTS FOR super@localhost;Code language: SQL (Structured Query Language) (sql)
+SHOW GRANTS FOR super@localhost;
 ```
 
 
